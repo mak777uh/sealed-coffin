@@ -1,6 +1,6 @@
 ## ⚰️ Sealed Coffin — a sealed-bid auction where nobody sees your bid, or you
 
-**Code (MIT):** https://github.com/mak777uh/sealed-coffin  ← *placeholder, replace when the repo is public*
+**Code (MIT):** https://github.com/mak777uh/sealed-coffin
 
 **Description**
 
@@ -38,4 +38,4 @@ Built against `tari_template_lib 0.34.0`. **Developed with an AI coding agent**;
 
 **Tari payment address:** `126KP9L7QgjAfidCktMkBkcGwXPF9eFNRAYTGRc8b6UtcuzDL3G4L9Grp9VXNqDJN3rN66E8LERCBQadbjJwALuRaoS`
 
-**Social announcement:** <LINK TO BLUESKY OR r/tari POST>  ← *placeholder*
+**Social announcement (r/tari):** https://www.reddit.com/r/tari/comments/1x6u7q5/i_built_sealed_coffin_a_private_sealedbid_auction/
