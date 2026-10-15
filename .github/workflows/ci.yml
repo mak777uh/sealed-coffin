@@ -1,0 +1,20 @@
+name: ci
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  template:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: rustup target add wasm32-unknown-unknown && rustup component add clippy rustfmt
+      - uses: Swatinem/rust-cache@v2
+      - name: Format
+        run: cargo fmt --check
+      - name: Build the template (WASM)
+        run: cargo build --release --target wasm32-unknown-unknown --locked
+      - name: Lint
+        run: cargo clippy --release --target wasm32-unknown-unknown --locked -- -D warnings
+      - name: End-to-end tests on the Ootle engine
+        run: cargo test --locked
