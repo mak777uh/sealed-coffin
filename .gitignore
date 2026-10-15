@@ -1,0 +1,6 @@
+/target
+**/*.rs.bk
+.env
+*.secret
+.secret*
+*.key
